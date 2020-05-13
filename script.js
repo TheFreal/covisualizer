@@ -88,7 +88,10 @@ const formats = {
 }
 
 function saveWallpaper(formatName){
-  
+  gtag('event', "download", {
+    'value': formatName + " - " + colors.concat
+  });
+
   // calculate dimensions
   const x = formats[formatName].x;
   const y = formats[formatName].y;
