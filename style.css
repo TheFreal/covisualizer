@@ -1,0 +1,210 @@
+:root {
+  --color-1: #157207;
+  --color-2: #000000;
+  --color-3: #202020;
+  --color-4: #123014;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    216deg,
+    var(--color-1),
+    var(--color-2),
+    var(--color-3),
+    var(--color-4)
+  );
+  background-size: 800% 800%;
+  -webkit-animation: BackgroundGradient 20s ease infinite;
+  -moz-animation: BackgroundGradient 20s ease infinite;
+  animation: BackgroundGradient 20s ease infinite;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+#head {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#head > p {
+  color: white;
+  padding: 0px 20px 50px 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+p > a {
+  color: white;
+}
+
+#layout {
+  padding: 5% 10% 5% 10%;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 5% auto 40% 5% 25% 5% auto;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.75);
+  min-height: 100vh;
+}
+
+#genome {
+  height: auto;
+  min-height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 3px);
+  grid-template-rows: repeat(auto-fill, 3px);
+}
+
+#genome > span {
+  height: auto;
+  width: auto;
+  display: inline-block;
+}
+
+#controls {
+  align-self: center;
+  justify-self: center;
+  grid-column: 2;
+  grid-row: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+#schemes {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#downloadButtons{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  margin: 15px 5px 0px 5px;
+  padding: 10px 20px 10px 20px;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+.schemeBtn {
+  background: rgba(0, 0, 0, 0.5);
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+#colors {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.colorStack {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0px;
+}
+
+.colorLabel {
+  width: auto;
+  text-align: center;
+  color: white;
+}
+
+.colorField {
+  height: 30px;
+  width: 30px;
+  margin: 10px 5px 0px 5px;
+}
+
+#downloadHead {
+  color: white;
+  margin: 50px 0px 0px 0px;
+}
+
+#footer {
+  color: #404040;
+  font-family: "Roboto Mono", monospace;
+  grid-row: 7;
+  grid-column: 2;
+  text-decoration: none;
+  margin-top: 50px;
+  align-self: center;
+}
+
+#wpRender {
+  grid-row: 7;
+  grid-column: 1 / 4;
+  background-color: var(--color-3);
+  display: none;
+}
+
+.G {
+  background-color: var(--color-1);
+}
+
+.A {
+  background-color: var(--color-2);
+}
+
+.T {
+  background-color: var(--color-3);
+}
+
+.C {
+  background-color: var(--color-4);
+}
+
+@-webkit-keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 54%;
+  }
+  50% {
+    background-position: 100% 47%;
+  }
+  100% {
+    background-position: 0% 54%;
+  }
+}
+@-moz-keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 54%;
+  }
+  50% {
+    background-position: 100% 47%;
+  }
+  100% {
+    background-position: 0% 54%;
+  }
+}
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 54%;
+  }
+  50% {
+    background-position: 100% 47%;
+  }
+  100% {
+    background-position: 0% 54%;
+  }
+}

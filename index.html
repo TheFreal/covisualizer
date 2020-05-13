@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - COV-isualize-19</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <div id="shading"></div>
+  <div id="layout">
+    <div id="head">
+      <h1> COV-isualize-19 </h1>
+      <p> This picture is generated from the <a href="https://www.kaggle.com/paultimothymooney/explore-coronavirus-sars-cov-2-genome/data">SARS-CoV-2 virus genome</a>, one pixel representing one nucleotide.<br/> Exported wallpapers include the entirety of the virus' DNA.</p>
+    </div>
+    <div id="genome">
+    </div>
+    <div id="controls">
+      <div id="schemes">
+        <input type="button" class="schemeBtn button" value="Nightmares" onClick="updateColorScheme('cyber')">
+        <input type="button" class="schemeBtn button" value="Despair" onClick="updateColorScheme('cymk')">
+        <input type="button" class="schemeBtn button" value="Boredom" onClick="updateColorScheme('noise')">
+        <input type="button" class="schemeBtn button" value="Escapism" onClick="updateColorScheme('matrix')">
+        <input type="button" class="schemeBtn button" value="Depression" onClick="updateColorScheme('material')">
+        <input type="button" class="schemeBtn button" value="Loneliness" onClick="updateColorScheme('purple')">
+        <input type="button" class="schemeBtn button" value="Isolation" onClick="updateColorScheme('minty')">
+        <input type="button" class="schemeBtn button" value="Panic" onClick="updateColorScheme('icecream')">
+        <input type="button" class="schemeBtn button" value="Self-Doubts" onClick="updateColorScheme('doubts')">
+        <input type="button" class="schemeBtn button" value="Orange" onClick="updateColorScheme('tangerine')">
+      </div>
+      <div id="colors">
+      <div class="colorStack">
+        <span class="colorLabel">G</span>
+        <input type="color" class="colorField" id="colorField1" onChange="updateColor(this, 1)" value="#157207">
+       </div>
+      <div class="colorStack">
+        <span class="colorLabel">A</span>
+        <input type="color" class="colorField" id="colorField2" onChange="updateColor(this, 2)" value="#000000">
+      </div>
+      <div class="colorStack">
+        <span class="colorLabel">T</span>
+        <input type="color" class="colorField" id="colorField3" onChange="updateColor(this, 3)" value="#202020">
+       </div>
+        <div class="colorStack">
+        <span class="colorLabel">C</span>
+        <input type="color" class="colorField" id="colorField4" onChange="updateColor(this, 4)" value="#123014">
+       </div>
+        </div>
+      <p id="downloadHead" href="">Download a virus!</p>
+      <div id="downloadButtons">
+        <button class="button" onclick="saveWallpaper('iphonex')">iPhone 11 Pro, Xs, X</button>
+        <button class="button" onclick="saveWallpaper('iphonexr')">iPhone 11, Xr</button>
+        <button class="button" onclick="saveWallpaper('iphonemax')">iPhone 11 Pro Max, Xs Max</button>
+        <button class="button" onclick="saveWallpaper('pixel2xl')">Pixel 2 XL</button>
+        <button class="button" onclick="saveWallpaper('1080p')">1080p</button>
+        <button class="button" onclick="saveWallpaper('4k')">4K</button>
+      </div>
+    </div>
+    <a id="footer" href="https://www.youtube.com/watch?v=4B9ByPrRDdE">From quarantine with 🖤</a>
+    <canvas id="wpRender"></canvas>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
