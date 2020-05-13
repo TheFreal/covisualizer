@@ -60,10 +60,12 @@ p > a {
 
 #genome {
   height: auto;
-  min-height: 40vh;
+  min-height: 30vh;
+  margin-bottom: 30px;
+  max-height: 60vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 3px);
-  grid-template-rows: repeat(auto-fill, 3px);
+  grid-template-columns: repeat(auto-fill, 4px);
+  grid-template-rows: repeat(auto-fill, 4px);
 }
 
 #genome > span {
@@ -103,6 +105,12 @@ p > a {
   border: 0;
   box-shadow: none;
   border-radius: 0px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  opacity: 0.7;
 }
 
 .schemeBtn {
