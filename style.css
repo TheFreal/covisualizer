@@ -106,7 +106,7 @@ p > a {
   box-shadow: none;
   border-radius: 0px;
   cursor: pointer;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 
 .button:hover {
@@ -143,6 +143,9 @@ p > a {
   height: 30px;
   width: 30px;
   margin: 10px 5px 0px 5px;
+  border-style: none;
+  border-width: 1px;
+  border-color: white;
 }
 
 #downloadHead {
