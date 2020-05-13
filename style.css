@@ -48,11 +48,9 @@ p > a {
 }
 
 #layout {
-  padding: 5% 10% 5% 10%;
+  padding: 5% 20% 5% 20%;
   display: flex;
   flex-direction: column;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 5% auto 40% 5% 25% 5% auto;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.75);
   min-height: 100vh;

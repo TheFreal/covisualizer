@@ -26,6 +26,7 @@ const schemes = {
   "tangerine":["#cc5803", "#e2711d", "#ff9505", "#ffb627"],
   "icecream":["#7bdff2", "#b2f7ef", "#eff7f6", "#f7d6e0"],
   "doubts":["#000000", "#ffffff", "#a4a4a4", "#810081"],
+  "sourdough":["#440154", "#39568c", "#29af7f", "#fde725"]
 }
 
 function updateColor(val, index){
