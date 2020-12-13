@@ -49,6 +49,10 @@ function updateColorScheme(name){
 }
 
 const formats = {
+  "a4":{
+    x:4962,
+    y:7016
+  },
   "1080p":{
     x:1920,
     y:1080
